@@ -1,7 +1,5 @@
 // Uncomment the code below and write your tests
-// import { simpleCalculator, Action } from './index';
-
-import { Action, simpleCalculator } from '01-simple-tests';
+import { simpleCalculator, Action } from './index';
 
 describe('simpleCalculator tests', () => {
   test('should add two numbers', () => {
@@ -39,7 +37,7 @@ describe('simpleCalculator tests', () => {
   });
 
   test('should return null for invalid arguments', () => {
-    const result = simpleCalculator({ a: '999', b: 3, action: Action.Divide });
+    const result = simpleCalculator({ a: '999', b: 0, action: Action.Divide });
     expect(result).toBeNull;
   });
 });
